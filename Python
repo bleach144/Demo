@@ -1,0 +1,5 @@
+dates = pd.date_range('today', periods=6)  # 定义时间序列作为 index
+num_arr = np.random.randn(6, 4)  # 传入 numpy 随机数组
+columns = ['A', 'B', 'C', 'D']  # 将列表作为列名
+df1 = pd.DataFrame(num_arr, index=dates, columns=columns)
+df1
